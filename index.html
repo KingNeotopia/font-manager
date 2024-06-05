@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Manager</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1><i class="fas fa-font"></i> Font Manager</h1>
+    <form id="fontForm">
+        <label for="font-title"><i class="fas fa-heading"></i> Font Title:</label>
+        <input type="text" id="font-title" name="font-title" required>
+        <label for="font-family"><i class="fas fa-font"></i> Font Family:</label>
+        <input type="text" id="font-family" name="font-family" required>
+        <label for="font-url"><i class="fas fa-link"></i> Font URL:</label>
+        <textarea id="font-url" name="font-url" required></textarea>
+        <button type="submit"><i class="fas fa-plus"></i> Add Font</button>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th><i class="fas fa-heading"></i> Title</th>
+                <th><i class="fas fa-font"></i> Family</th>
+                <th><i class="fas fa-link"></i> URL</th>
+                <th><i class="fas fa-cog"></i> Actions</th>
+            </tr>
+        </thead>
+        <tbody id="fontList">
+            <!-- Dynamic Content -->
+        </tbody>
+    </table>
+
+      <!-- Popup for successful font submission -->
+        <div class="overlay-success" id="overlaySuccess"></div>
+        <div class="popup-success" id="popupSuccess">
+            <h2><i class="fas fa-check-circle"></i> Success!</h2>
+            <p>Your font has been successfully submitted.</p>
+            <button onclick="closeSuccessPopup()">OK</button>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
