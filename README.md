@@ -30,8 +30,7 @@ To run the Font Manager locally, follow these steps:
 1. Open the Font Manager in your web browser.
 2. Use the form to add custom fonts by providing the font title, family, and URL.
 3. Click the "Add Font" button to submit the form and add the font to the list.
-4. To edit an existing font, click the "Edit" button next to the font entry and modify the font details in the form.
-5. To delete a font, click the "Delete" button next to the font entry.
+4. To delete a font, click the "Delete" button next to the font entry.
 
 ## Contributing
 
